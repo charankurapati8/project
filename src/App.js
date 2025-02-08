@@ -6,6 +6,7 @@ import Computerpage from './stores/pages/computerpage'
 import Tvpage from './stores/pages/tvpage'
 import Acpage from './stores/pages/acpage'
 import Watchpage from './stores/pages/watchpage'
+import Mobilesingle from './singles/mobilesingle'
 const App = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='tv' element = {<Tvpage/>}/>
         <Route path='ac' element = {<Acpage/>}/>
         <Route path='watches' element = {<Watchpage/>}/>
+        <Route path='/mobile/:id' element={<Mobilesingle/>}/>
       </Routes>
      
     </div>
