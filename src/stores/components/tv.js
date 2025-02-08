@@ -1,12 +1,13 @@
 import React from 'react'
-import { computerData } from '../data/computer'
+import { tvData } from '../data/tv'
 
-const Computer = () => {
-    const firstFiveImages = computerData.slice(0,5)
-  return (
- <>
-<div className='protitle'>
-   <h2>Computers</h2>
+const TV = () => {
+ const firstFiveImages = tvData.slice(0,5)
+ 
+   return (
+   <>
+   <div className='protitle'>
+   <h2>TV</h2>
      <div className='prosection'>
        {
          firstFiveImages.map((item)=>{
@@ -19,8 +20,8 @@ const Computer = () => {
        }
      </div>
    </div>
- </>
-  )
+   </>
+   )
 }
 
-export default Computer
+export default TV
