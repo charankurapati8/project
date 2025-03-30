@@ -20,6 +20,35 @@ body {
     padding-left: 50px;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
 .prosection {
     display: flex;
     background-color: white;
@@ -62,11 +91,34 @@ body {
 .pageimg {
     height: 230px;
     width: 190px;
+    overflow: hidden;
 }
 
 .pageimg img {
     width: 90%;
 }
+
+.page-content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-content h3, 
+.page-content p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+.page-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0;
+}
+
 .ind-section{
     display: flex;
 }
@@ -85,11 +137,63 @@ body {
 }
 .fullpage{
     display: flex;
+    min-height: 100vh;
 }
 .pro-selected {
-    
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px;
     width: 100%;
     border: 1px solid black;
+    flex-grow: 1;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    min-width: 200px;
+    background-color: white;
+    border-right: 1px solid #eee;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    margin-bottom: 5px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-item label {
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.pro-input input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0; 
+
+}
+
+.pro-input label {
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    padding: 3px;
+    gap: 5px;
 }

@@ -8,9 +8,12 @@ const Navbar = () => {
       <div className='title'>
         E-CART
       </div>
-      <div>
+      <div className='search-container'>
         <input type='text'
         placeholder='search......'/>
+        <button className='search-button'>
+          <i className="fas fa-search"></i>
+        </button>
       </div>
       <div className='cart'>
         CART
