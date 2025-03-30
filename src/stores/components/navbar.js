@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const Navbar = () => {
   return (
     <>
     <div className='navsection'> 
       <div className='title'>
-        E-CART
+        <LanguageIcon/> E-CART
       </div>
       <div className='search-container'>
         <input type='text'
@@ -15,8 +17,8 @@ const Navbar = () => {
           <i className="fas fa-search"></i>
         </button>
       </div>
-      <div className='cart'>
-        CART
+      <div className='title'>
+      <AddShoppingCartIcon/>  CART
       </div>
     </div>
     <div className='submenu'>
